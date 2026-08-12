@@ -1,0 +1,66 @@
+# ===== BuzzSet YOLOV++ — repo excludes =====
+# Keep the repo to code + configs + docs. Data, weights, and training
+# outputs are large binary/private assets and stay out of git.
+
+# --- Datasets (BuzzSet Challenge video, ~34GB) ---
+/data/
+
+# --- Pretrained / trained weights (~2.5GB) ---
+/weights/
+*.pth
+*.pt
+*.onnx
+*.ckpt
+*.npy
+
+# --- Training runs / checkpoints / logs (live, ~17GB) ---
+buzzset_yolovpp_comparison/runs/
+**/YOLOX_outputs/
+**/tensorboard/
+*.log
+events.out.tfevents.*
+
+# --- Non-code archive (reports, slides, spreadsheets, figures) ---
+/_archive/
+
+# --- Research papers (PDFs) ---
+*.pdf
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.swp
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
